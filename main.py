@@ -5,6 +5,8 @@ from logger import log_state
 def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    pygame.display.set_caption("Asteroids")
+    
     while True:
         log_state()
         for event in pygame.event.get():
